@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sigma.Views.RegistrationPage">
+    <ContentPage.Content>
+
+        <StackLayout  HorizontalOptions="FillAndExpand"  BackgroundColor="#7F48DA">
+            <StackLayout Padding="10,10,10,10">
+                <Image Source="icon_sigma.png"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout Padding="30,20" Spacing="20">
+                    <Label Text="Регистрация" TextColor="#7F48DA" FontAttributes="Bold" FontSize="30" FontFamily="Open Sans" HorizontalOptions="Center" Padding="20"></Label>
+                    <Frame CornerRadius="5" HasShadow="true" Padding="0" BorderColor="Black">
+                        <Entry x:Name="entryLogin" Placeholder="Эл.Почта"  Style="{StaticResource entryLoginRegister}"></Entry>
+                    </Frame>
+                    <Frame CornerRadius="5" HasShadow="true" Padding="0" BorderColor="Black">
+                        <Entry x:Name="entryPassword" Placeholder="Пароль"  IsPassword="true" Style="{StaticResource entryLoginRegister}"></Entry>
+                    </Frame>
+                    <Frame CornerRadius="5" HasShadow="true" Padding="0" BorderColor="Black">
+                        <Entry x:Name="entryCopyPassword" Placeholder="Повторите пароль"  IsPassword="true" Style="{StaticResource entryLoginRegister}"></Entry>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand" Spacing="55" Padding="30,20" >
+                    <Button x:Name="buttonLogin" Text="Регистрация"
+                    Clicked="Login"
+                    Style="{StaticResource buttonStyleLogin}"/>
+                    <Button x:Name="buttonRegistration" Text="Вход"
+                    Clicked="Registration"
+                    Style="{StaticResource buttonStyleRegistration}"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
