@@ -10,13 +10,13 @@
                       ContentTemplate="{DataTemplate views:CasePage}" />
         <ShellContent Title="Рынок"
                       Icon="icon_market.png"
-                      ContentTemplate="{DataTemplate views:AboutPage}" />
+                      ContentTemplate="{DataTemplate views:CasePage}" />
         <ShellContent Title="Операции"
                       Icon="icon_operatios.png"
-                      ContentTemplate="{DataTemplate views:AboutPage}" />
+                      ContentTemplate="{DataTemplate views:CasePage}" />
         <ShellContent Title="Профиль"
                       Icon="icon_profile.png"
-                      ContentTemplate="{DataTemplate views:AboutPage}" />
+                      ContentTemplate="{DataTemplate views:CasePage}" />
     </TabBar>
     
 </Shell>
