@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sigma.Views.CasePage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="White">
+            <StackLayout BackgroundColor="#CFB7F5"  HeightRequest="145">
+                <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <ScrollView Orientation="Horizontal" Margin="0,30,10,30" Padding="30,3,3,3"  HorizontalScrollBarVisibility="Never">
+                            <StackLayout Orientation="Horizontal" Spacing="20" HeightRequest="150" Padding="3">
+                                <Frame CornerRadius="5" HasShadow="true">
+                                    <StackLayout BackgroundColor="White" WidthRequest="201">
+                                        <Label Text="Суммарная стоимость"  FontSize="15" TextColor="#555555"/>
+                                        <Label Text="40 267,32 ₽" Margin="0,1,0,6" FontSize="37" TextColor="#7F48DA" FontFamily="Lobster" />
+                                        <Label Text="Инвестировано:  37 321,23 ₽"  FontSize="15" TextColor="#B4B4B4"/>
+                                </StackLayout>
+                                </Frame>
+                                <Frame CornerRadius="5" HasShadow="true">
+                                    <StackLayout BackgroundColor="White" WidthRequest="201">
+                                        <Label Text="Бумажная прибыль"  FontSize="15" TextColor="#555555"/>
+                                        <Label Text="+2 123,23 ₽ " Margin="0,1,0,6" FontSize="37" TextColor="#75D728" FontFamily="Lobster" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="icon_uppercent.png"></Image>
+                                        <Label Text="5,3 %"  FontSize="15" TextColor="#333333"/>
+                                    </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                                <Frame CornerRadius="5" HasShadow="true">
+                                    <StackLayout BackgroundColor="White" WidthRequest="201">
+                                        <Label Text="Дивидендная прибыль"  FontSize="15" TextColor="#555555"/>
+                                        <Label Text="+323,21 ₽ " Margin="0,1,0,6" FontSize="40" TextColor="#75D728" FontFamily="Lobster" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="icon_uppercent.png"></Image>
+                                        <Label Text="0,3 %"  FontSize="15" TextColor="#333333"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                 </Frame>  
+                            </StackLayout>
+                        </ScrollView>
+                    <StackLayout >
+                        <Button x:Name="buttonSale" Text="Акции" FontSize="20" TextColor="#333333" FontAttributes="Bold" Padding="30,15,30,15"
+                                ImageSource="icon_arrowclose.png" ContentLayout="Right, 20" Clicked="Visible" BackgroundColor="White"   >
+                        </Button>
+                        
+                        <StackLayout x:Name="SaleList" IsVisible="False">
+                            <StackLayout Orientation="Horizontal"  Margin="20,0,10,0" Padding="20,10,10,10" BackgroundColor="#F8F8F8">
+                                <Image Source="icon_yandex.png"></Image>
+                                <StackLayout Margin="10,0,0,0" >
+                                    <Label Text="Yandex clA" FontSize="15" TextColor="#333333" FontFamily="Lobster" />
+                                    <Label Text="YNDX - 2 шт" FontSize="15" TextColor="#B4B4B4" FontFamily="Lobster" />
+                                </StackLayout>
+                                <StackLayout  HorizontalOptions="EndAndExpand" >
+                                    <Label Text="10 854,4 ₽" FontSize="15" TextColor="#333333" FontFamily="Lobster" HorizontalTextAlignment="End" />
+                                    <Label Text="474,04 ₽ - 4,24 %" FontSize="15" TextColor="#75D728" FontFamily="Lobster" HorizontalTextAlignment="End"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"  Margin="20,0,10,0" Padding="20,10,10,10" BackgroundColor="#F8F8F8">
+                                <Image Source="icon_sber.png"></Image>
+                                <StackLayout Margin="10,0,0,0" >
+                                    <Label Text="СберБанк" FontSize="15" TextColor="#333333" FontFamily="Lobster" />
+                                    <Label Text="SBER - 20 шт" FontSize="15" TextColor="#B4B4B4" FontFamily="Lobster" />
+                                </StackLayout>
+                                <StackLayout  HorizontalOptions="EndAndExpand" >
+                                    <Label Text="11 154,6 ₽" FontSize="15" TextColor="#333333" FontFamily="Lobster" HorizontalTextAlignment="End"/>
+                                    <Label Text="4 616,34 ₽ - 70,6 %" FontSize="15" TextColor="#75D728" FontFamily="Lobster" HorizontalTextAlignment="End"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"  Margin="20,0,10,20" Padding="20,10,10,10" BackgroundColor="#F8F8F8">
+                                <Image Source="icon_afks.png"></Image>
+                                <StackLayout Margin="10,0,0,0" >
+                                    <Label Text="АФК Система" FontSize="15" TextColor="#333333" FontFamily="Lobster"/>
+                                    <Label Text="YNDX - 100 шт" FontSize="15" TextColor="#B4B4B4" FontFamily="Lobster" />
+                                </StackLayout>
+                                <StackLayout  HorizontalOptions="EndAndExpand" >
+                                    <Label Text="2 831,2 ₽" FontSize="15" TextColor="#333333" FontFamily="Lobster" HorizontalTextAlignment="End"/>
+                                    <Label Text="1 413,52 ₽ - 99,7 %" FontSize="15" TextColor="#75D728" FontFamily="Lobster" HorizontalTextAlignment="End"/>
+                                </StackLayout>
+                            </StackLayout>
+                            
+                        </StackLayout>
+                        
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

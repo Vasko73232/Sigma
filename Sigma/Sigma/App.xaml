@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sigma.App">
+    <Application.Resources>
+        <Style TargetType="TabBar">
+            <Setter Property="Shell.TabBarBackgroundColor"
+            Value="#FFFFFF" />
+            <Setter Property="Shell.TabBarTitleColor"
+            Value="#7F48DA" />
+            <Setter Property="Shell.TabBarUnselectedColor"
+            Value="#BDBDBD" />
+        </Style>
+
+        <Style x:Key="buttonStyleLogin" TargetType="Button">
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            <Setter Property="BackgroundColor" Value="#7F48DA" />
+            <Setter Property="BorderRadius" Value="5" />
+            <Setter Property="BorderWidth" Value="1" />
+            <Setter Property="WidthRequest" Value="150" />
+            <Setter Property="HeightRequest" Value="50" />
+            <Setter Property="TextColor" Value="White" />
+         </Style>
+        <Style x:Key="buttonStyleRegistration" TargetType="Button">
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="BorderRadius" Value="5" />
+            <Setter Property="BorderWidth" Value="1" />
+            <Setter Property="WidthRequest" Value="130" />
+            <Setter Property="HeightRequest" Value="50" />
+            <Setter Property="TextColor" Value="#7F48DA" />
+            <Setter Property="BorderColor" Value="#333333"/>
+            
+        </Style>
+        <Style x:Key="entryLoginRegister" TargetType="Entry">
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="VerticalOptions" Value="FillAndExpand" />
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="TextColor" Value="Black" />
+            
+            
+        </Style>
+        
+    </Application.Resources>
+</Application>
